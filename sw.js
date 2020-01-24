@@ -11,3 +11,16 @@ self.addEventListener("install", event => {
         })
     );
 });
+
+// add fetch event to return cached assets, if poss
+self.addEventListener("fetch", event => {
+    event.respondWith(
+        // ask the cache if it has a current request
+        caches.match(event.request)
+        // resolve the promise
+        .then(response => {
+            // if response is undefined fetch the request
+            return response || fetch(event.request);
+        })
+    )
+});
