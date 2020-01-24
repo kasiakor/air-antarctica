@@ -1,0 +1,52 @@
+[
+    {
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "stops": "0",
+    "price": "30.00"
+    },
+    {
+    "city": "Tromso",
+    "country": "Norway",
+    "stops": "0",
+    "price": "65.00"
+    },
+    {
+    "city": "Svalbard",
+    "country": "Norway",
+    "stops":  "1",
+    "price": "75.00"	
+    },
+    {
+    "city": "Kulusuk",
+    "country": "Greenland",
+    "stops": "2",
+    "price": "89.00"	
+    },
+    {
+    "city": "Kodiak",
+    "country": "USA",
+    "stops": "2",
+    "price": "95.00"	
+    },
+    {
+    "city": "McMurdo",
+    "country": "Antarctica",
+    "stops": "3",
+    "price": "174.00"	
+    } 
+]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
