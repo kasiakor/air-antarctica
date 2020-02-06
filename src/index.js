@@ -18,3 +18,24 @@ fetch("http://localhost:3000/script.json")
     });
     document.querySelector("#screen-flights").innerHTML = html;
 });
+
+window.onload = function(){
+    let differedPrompt;
+    const button = document.querySelector("#a2hs");
+    console.log(button);
+    // when beforeinstallprompt event fires the plus sign will be visible
+    window.addEventListener("beforeinstallprompt", event => {
+        event.preventDefault();
+        differedPrompt = event;
+        button.style.display = "block";
+    });
+    button.addEventListener("click", () => {
+        button.style.display = "none";
+        differedPrompt.prompt();
+        differedPrompt.userChoice.then( result => {
+            console.log(result.outcome)
+        });
+        differedPrompt = null;
+    });
+};
+
